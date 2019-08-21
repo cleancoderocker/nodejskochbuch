@@ -1,0 +1,19 @@
+{
+  "name": "web-graphql-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start:apollo": "node ./apollo/src/start.js",
+    "start:express": "node ./express-graphql/src/start.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "apollo-server": "^2.8.1",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.4.2"
+  }
+}

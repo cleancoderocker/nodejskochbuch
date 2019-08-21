@@ -11,6 +11,5 @@
     "nodejs"
   ],
   "author": "Philip Ackermann",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
