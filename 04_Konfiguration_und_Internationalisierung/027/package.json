@@ -1,0 +1,16 @@
+{
+  "name": "internationalization-files",
+  "version": "1.0.0",
+  "main": "./src/start.js",
+  "scripts": {
+    "start:strings": "node ./src/start-strings.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "i18n": "^0.8.3"
+  }
+}

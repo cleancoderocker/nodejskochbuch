@@ -1,0 +1,14 @@
+{
+  "username": "maxmustermann",
+  "firstName": "Max",
+  "lastName": "Mustermann",
+  "age": 45,
+  "email": "maxmustermann@nodejskochbuch.de",
+  "phone": "12345/12345",
+  "address": {
+    "street": "Musterstraße 123",
+    "postcode": "12345",
+    "city": "Musterstadt",
+    "country": "Deutschland"
+  }
+}

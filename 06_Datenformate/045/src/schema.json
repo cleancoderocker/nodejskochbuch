@@ -1,0 +1,45 @@
+{
+  "title": "Person",
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "age": {
+      "description": "Age in years",
+      "type": "integer",
+      "minimum": 0
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "street": {
+          "type": "string"
+        },
+        "postcode": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        }
+      },
+      "required": ["street"]
+    }
+  },
+  "required": ["username", "firstName", "lastName"]
+}

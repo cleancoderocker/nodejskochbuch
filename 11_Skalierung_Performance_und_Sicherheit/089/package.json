@@ -1,0 +1,22 @@
+{
+  "name": "javascript-execute",
+  "version": "1.0.0",
+  "scripts": {
+    "start:eval": "node ./src/start-eval.js",
+    "start:simple-eval": "node ./src/start-simple-eval.js",
+    "start:vm-context": "node ./src/start-vm-context.js",
+    "start:vm-context-2": "node ./src/start-vm-context-2.js",
+    "start:vm-new-context": "node ./src/start-vm-new-context.js",
+    "start:vm-new-context-fail": "node ./src/start-vm-new-context-fail.js",
+    "start:vm-this-context": "node ./src/start-vm-this-context.js",
+    "start:vm2": "node ./src/start-vm2.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "vm2": "^3.6.4"
+  }
+}

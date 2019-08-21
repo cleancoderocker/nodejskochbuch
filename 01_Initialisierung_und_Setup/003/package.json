@@ -1,0 +1,14 @@
+{
+  "name": "codenode",
+  "version": "1.0.0",
+  "description": "A simple Node.js package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "javascript",
+    "node.js"
+  ],
+  "author": "Philip Ackermann"
+}

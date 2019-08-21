@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script>
+      const source = new EventSource('/events');
+      source.onmessage = (event) => {
+        console.log(event.data);
+        console.log(event.origin);
+        console.log(event.lastEventId);
+      };
+    </script>
+  </body>
+</html>

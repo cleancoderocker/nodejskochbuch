@@ -1,0 +1,16 @@
+{
+  "name": "web-server",
+  "version": "1.0.0",
+  "scripts": {
+    "start:http": "node ./src/server-http.js",
+    "start:express": "node ./src/server-express.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+	"express": "^4.16.4"
+  }
+}

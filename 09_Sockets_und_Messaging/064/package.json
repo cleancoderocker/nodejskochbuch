@@ -1,0 +1,12 @@
+{
+  "name": "sockets-tcp-client",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./src/client.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann"
+}

@@ -1,0 +1,16 @@
+query RootQuery {
+	artists {
+	  id
+	  name
+	  albums {
+		id
+		title
+		tracks {
+		  id
+		  title
+		  length
+		}
+	  }
+	}
+  }
+  

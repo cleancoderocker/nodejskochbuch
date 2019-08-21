@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tk="http://www.nodejsprofibuch.de/xml/calendar"
+	targetNamespace="http://www.nodejsprofibuch.de/xml/calendar"
+	elementFormDefault="qualified">
+	<element name="calendar">
+		<complexType>
+			<sequence>
+				<element name="owner" type="tk:owner" />
+				<element name="appointments" type="tk:appointments" />
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="owner">
+		<sequence>
+			<element name="name" type="string" />
+		</sequence>
+	</complexType>
+	<complexType name="appointments">
+		<sequence>
+			<element name="appointment" type="tk:appointment" minOccurs="0" maxOccurs="unbounded" />
+		</sequence>
+		<attribute name="name" type="string" />
+	</complexType>
+	<complexType name="appointment">
+		<sequence>
+			<element name="description" type="string" />
+			<element name="time" type="string" />
+			<element name="location" type="string" />
+		</sequence>
+	</complexType>
+</schema>

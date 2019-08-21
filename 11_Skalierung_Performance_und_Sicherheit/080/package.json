@@ -1,0 +1,13 @@
+{
+  "name": "processes-exec",
+  "version": "1.0.0",
+  "scripts": {
+    "start:exec": "node ./src/start-exec.js",
+    "start:exec-file": "node ./src/start-exec-file.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann"
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calendar
+	xmlns="http://www.nodejsprofibuch.de/xml/calendar"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.nodejsprofibuch.de/xml/calendar calendar.xsd">
+	<owner>
+		<name>Max Mustermann</name>
+	</owner>
+	<appointments name="Example calendar">
+		<appointment>
+			<description>Katze füttern</description>
+			<time>8:00</time>
+			<location>Küche</location>
+		</appointment>
+		<appointment>
+			<description>Mit Freundin Schuhe einkaufen</description>
+			<time>9:00</time>
+			<location>Schuhgeschäft</location>
+		</appointment>
+		<appointment>
+			<description>Computer spielen</description>
+			<time>20:00</time>
+			<location>Am Computer</location>
+		</appointment>
+	</appointments>
+</calendar>

@@ -1,0 +1,29 @@
+version: "3"
+services:
+  gateway:
+    image: "cleancoderocker/gateway"
+    container_name: "gateway"
+    environment:
+      - NODE_ENV=production
+      - URL_USERS_SERVICE=http://service-users:8080
+      - URL_BLOGS_SERVICE=http://service-blogs:8080
+    ports:
+      - "8090:8080"
+    command: "npm start"
+  service-users:
+    image: "cleancoderocker/service-users"
+    container_name: "service-users"
+    environment:
+      - NODE_ENV=production
+    expose:
+      - "8080"
+    command: "npm start"
+  service-blogs:
+    image: "cleancoderocker/service-blogs"
+    container_name: "service-blogs"
+    environment:
+      - NODE_ENV=production
+    expose:
+      - "8080"
+    command: "npm start"
+  

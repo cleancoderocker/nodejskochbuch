@@ -1,0 +1,17 @@
+{
+  "name": "process-ini",
+  "version": "1.0.0",
+  "main": "./src/start-parse.js",
+  "scripts": {
+    "start:read": "node ./src/read.js",
+    "start:write": "node ./src/write.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "ini": "^1.3.5"
+  }
+}

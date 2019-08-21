@@ -1,0 +1,15 @@
+{
+  "name": "messaging-mqtt-broker",
+  "version": "1.0.0",
+  "scripts": {
+    "start:mosca": "node ./src/server.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "mosca": "^2.8.3"
+  }
+}

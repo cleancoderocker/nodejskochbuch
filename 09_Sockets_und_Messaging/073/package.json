@@ -1,0 +1,16 @@
+{
+  "name": "messaging-emails",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./src/start.js",
+    "start:attachment": "node ./src/start-attachment.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "nodemailer": "^4.6.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "web-graphql-schema",
+  "version": "1.0.0",
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "graphql": "^14.0.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+	"Greeting": "Hello World",
+	"Message": "This is an internationalization example.",
+	"Questions": {
+		"Question1": "What's your name?",
+		"Question2": "What's your age?"
+	}
+}

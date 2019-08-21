@@ -1,0 +1,16 @@
+{
+  "name": "events",
+  "version": "1.0.0",
+  "main": "./src/start.js",
+  "scripts": {
+    "start": "node ./src/start-event-emitter.js",
+    "start:converter": "node ./src/converter/start.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "recipe-02",
+  "version": "1.0.0",
+  "description": "Rezept: XML generieren",
+  "main": "./src/start.js",
+  "scripts": {
+    "start": "node ./src/start.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "xml2js": "^0.4.19",
+    "xmlbuilder": "^9.0.7"
+  }
+}

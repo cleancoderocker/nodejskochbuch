@@ -1,0 +1,687 @@
+Statistical profiling result from isolate-0x103001600-28693-v8.log, (45297 ticks, 4659 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    269    0.6%          /usr/lib/system/libsystem_platform.dylib
+    184    0.4%          /usr/lib/system/libsystem_pthread.dylib
+     50    0.1%          /usr/lib/system/libsystem_malloc.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+    409    0.9%    0.9%  LazyCompile: *onParserExecute _http_server.js:505:25
+    349    0.8%    0.8%  LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+    345    0.8%    0.8%  LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    296    0.7%    0.7%  LazyCompile: *resOnFinish _http_server.js:595:21
+    289    0.6%    0.6%  LazyCompile: *setCharset /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:250:41
+    276    0.6%    0.6%  LazyCompile: *onwrite _stream_writable.js:445:17
+    275    0.6%    0.6%  LazyCompile: *header /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:750:29
+    274    0.6%    0.6%  LazyCompile: *clearBuffer _stream_writable.js:498:21
+    256    0.6%    0.6%  LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:176:16
+    240    0.5%    0.5%  LazyCompile: *nextTick internal/process/task_queues.js:114:18
+    186    0.4%    0.4%  LazyCompile: *contentType /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:590:32
+    182    0.4%    0.4%  LazyCompile: *parserOnHeadersComplete _http_common.js:71:33
+    181    0.4%    0.4%  RegExp: [^\t\x20-\x7e\x80-\xff]
+    178    0.4%    0.4%  LazyCompile: *append internal/linkedlist.js:29:16
+    176    0.4%    0.4%  LazyCompile: *Readable.read _stream_readable.js:377:35
+    175    0.4%    0.4%  LazyCompile: *generateETag /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:275:32
+    164    0.4%    0.4%  LazyCompile: *_storeHeader _http_outgoing.js:276:22
+    157    0.3%    0.4%  RegExp: ; *([!#$%&'*+.^_`|~0-9A-Za-z-]+) *= *("(?:[\u000b\u0020\u0021\u0023-\u005b\u005d-\u007e\u0080-\u00ff]|\\[\u000b\u0020-\u00ff])*"|[!#$%&'*+.^_`|~0-9A-Za-z-]+) *
+    127    0.3%    0.3%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+    127    0.3%    0.3%  LazyCompile: *write_ _http_outgoing.js:555:16
+    122    0.3%    0.3%  LazyCompile: *_flushOutput _http_outgoing.js:758:63
+    118    0.3%    0.3%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+    112    0.2%    0.3%  LazyCompile: *debug internal/util/debuglog.js:45:35
+    108    0.2%    0.2%  LazyCompile: *parserOnMessageComplete _http_common.js:135:33
+    108    0.2%    0.2%  LazyCompile: *onCorkedFinish _stream_writable.js:672:24
+    104    0.2%    0.2%  LazyCompile: *_send _http_outgoing.js:213:49
+    103    0.2%    0.2%  LazyCompile: *parserOnIncoming _http_server.js:640:26
+     96    0.2%    0.2%  LazyCompile: *emit events.js:149:44
+     91    0.2%    0.2%  LazyCompile: *_dump _http_incoming.js:273:49
+     86    0.2%    0.2%  LazyCompile: *Writable.write _stream_writable.js:275:36
+     84    0.2%    0.2%  LazyCompile: *app /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/express.js:38:21
+     83    0.2%    0.2%  LazyCompile: *setStreamTimeout internal/stream_base_commons.js:202:26
+     83    0.2%    0.2%  LazyCompile: *expressInit /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/middleware/init.js:29:30
+     82    0.2%    0.2%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+     79    0.2%    0.2%  LazyCompile: *from buffer.js:196:28
+     78    0.2%    0.2%  LazyCompile: *detachSocket _http_server.js:194:62
+     75    0.2%    0.2%  RegExp: ;\s*charset\s*=
+     69    0.2%    0.2%  LazyCompile: *afterWrite _stream_writable.js:479:20
+     61    0.1%    0.1%  LazyCompile: *app.<computed> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/application.js:473:25
+     61    0.1%    0.1%  LazyCompile: *ReadableState _stream_readable.js:72:23
+     59    0.1%    0.1%  LazyCompile: *writevGeneric internal/stream_base_commons.js:107:23
+     51    0.1%    0.1%  LazyCompile: *resume_ _stream_readable.js:933:17
+     51    0.1%    0.1%  LazyCompile: *onFinish _http_outgoing.js:647:18
+     48    0.1%    0.1%  LazyCompile: *resetHeadersTimeoutOnReqEnd _http_server.js:772:37
+     48    0.1%    0.1%  LazyCompile: *nop _stream_writable.js:54:13
+     46    0.1%    0.1%  LazyCompile: *endReadableNT _stream_readable.js:1130:23
+     44    0.1%    0.1%  LazyCompile: *<anonymous> internal/util/debuglog.js:57:18
+     44    0.1%    0.1%  LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     44    0.1%    0.1%  LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/request.js:463:36
+     43    0.1%    0.1%  LazyCompile: *module.exports /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/qs/lib/parse.js:138:27
+     42    0.1%    0.1%  LazyCompile: *get _stream_duplex.js:121:6
+     41    0.1%    0.1%  LazyCompile: *Readable.on _stream_readable.js:828:33
+     40    0.1%    0.1%  LazyCompile: *getTimerDuration internal/timers.js:358:26
+     36    0.1%    0.1%  LazyCompile: *setHasTickScheduled internal/process/task_queues.js:46:29
+     33    0.1%    0.1%  RegExp: ^.*[\.\/\\]
+     30    0.1%    0.1%  LazyCompile: *socketOnWrap _http_server.js:757:22
+     30    0.1%    0.1%  LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+     29    0.1%    0.1%  LazyCompile: *write buffer.js:884:40
+     29    0.1%    0.1%  LazyCompile: *slowCases internal/util.js:108:19
+     27    0.1%    0.1%  LazyCompile: *processPromiseRejections internal/process/promises.js:144:34
+     26    0.1%    0.1%  LazyCompile: *ServerResponse _http_server.js:136:24
+     25    0.1%    0.1%  LazyCompile: *updateOutgoingData _http_server.js:425:28
+     25    0.1%    0.1%  LazyCompile: *query /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/middleware/query.js:39:24
+     25    0.1%    0.1%  LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+     24    0.1%    0.1%  LazyCompile: *trim_prefix /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:288:23
+     23    0.1%    0.1%  LazyCompile: *matchKnownFields _http_incoming.js:139:26
+     23    0.1%    0.1%  LazyCompile: *byteLength buffer.js:488:20
+     22    0.0%    0.0%  LazyCompile: *get internal/bootstrap/pre_execution.js:282:8
+     22    0.0%    0.0%  LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:275:64
+     19    0.0%    0.0%  RegExp: ^text\/|^application\/(javascript|json)
+     13    0.0%    0.0%  LazyCompile: *set /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/application.js:352:23
+     11    0.0%    0.0%  RegExp: ^\/?$
+     11    0.0%    0.0%  LazyCompile: *debug /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/debug/src/debug.js:65:17
+     10    0.0%    0.0%  LazyCompile: *emitCloseNT _http_server.js:633:21
+      4    0.0%    0.0%  LazyCompile: *fromString buffer.js:311:20
+      3    0.0%    0.0%  LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/application.js:158:29
+      2    0.0%    0.0%  LazyCompile: *normalizeString path.js:52:25
+      1    0.0%    0.0%  LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      1    0.0%    0.0%  LazyCompile: *Module._nodeModulePaths internal/modules/cjs/loader.js:425:37
+
+ [C++]:
+   ticks  total  nonlib   name
+  22624   49.9%   50.5%  T __ZN2v88internal21Builtin_MakeTypeErrorEiPmPNS0_7IsolateE
+   1645    3.6%    3.7%  T node::crypto::Hash::New(v8::FunctionCallbackInfo<v8::Value> const&)
+   1072    2.4%    2.4%  T _munmap
+    564    1.2%    1.3%  t _szone_malloc_should_clear
+    500    1.1%    1.1%  T ___channel_get_opt
+    244    0.5%    0.5%  T __ZN2v86Object3GetENS_5LocalINS_7ContextEEEj
+    214    0.5%    0.5%  t __malloc_initialize
+    209    0.5%    0.5%  t __enlarge
+    192    0.4%    0.4%  T node::InternalCallbackScope::Close()
+    190    0.4%    0.4%  T __ZN2v88Function4CallENS_5LocalINS_7ContextEEENS1_INS_5ValueEEEiPS5_
+    185    0.4%    0.4%  t __ZN2v88internal17PrototypeIterator7AdvanceEv
+    163    0.4%    0.4%  t __ZN2v88internal12BinarySearchILNS0_10SearchModeE1ENS0_15DescriptorArrayEEEiPT0_NS0_4NameEiPi
+    138    0.3%    0.3%  T __ZNK2v86String9WriteUtf8EPNS_7IsolateEPciPii
+    130    0.3%    0.3%  T ___mach_stack_logging_enumerate_records
+    128    0.3%    0.3%  t char const* __cxxabiv1::(anonymous namespace)::parse_builtin_type<__cxxabiv1::(anonymous namespace)::Db>(char const*, char const*, __cxxabiv1::(anonymous namespace)::Db&)
+    126    0.3%    0.3%  T __simple_dprintf
+    101    0.2%    0.2%  t _update_cache_for_file_streams
+    100    0.2%    0.2%  t __ZN2v88internal6String7FlattenEPNS0_7IsolateENS0_6HandleIS1_EENS0_13PretenureFlagE
+     94    0.2%    0.2%  T _vm_region_recurse_64
+     87    0.2%    0.2%  T node::StreamBase::Writev(v8::FunctionCallbackInfo<v8::Value> const&)
+     85    0.2%    0.2%  T node::ParseEncoding(char const*, node::encoding)
+     84    0.2%    0.2%  t _small_free_list_remove_ptr_no_clear
+     79    0.2%    0.2%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_headers_complete())>::Raw(llhttp__internal_s*)
+     77    0.2%    0.2%  t __ZN2v88internal25FunctionCallbackArguments4CallENS0_15CallHandlerInfoE
+     77    0.2%    0.2%  T _free
+     76    0.2%    0.2%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb0EEC1EPNS_8internal7IsolateENS_5LocalINS_7ContextEEE
+     67    0.1%    0.1%  t node::(anonymous namespace)::GetLibuvNow(v8::FunctionCallbackInfo<v8::Value> const&)
+     66    0.1%    0.1%  T v8::internal::Accessors::FunctionLengthGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     64    0.1%    0.1%  T _mach_vm_purgable_control
+     62    0.1%    0.1%  T __ZN2v87Context29GetNumberOfEmbedderDataFieldsEv
+     61    0.1%    0.1%  T __ZNK2v86String10Utf8LengthEPNS_7IsolateE
+     61    0.1%    0.1%  T __ZN2v811HandleScope10InitializeEPNS_7IsolateE
+     60    0.1%    0.1%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+     58    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+     58    0.1%    0.1%  t node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)
+     58    0.1%    0.1%  T __ZN2v811ArrayBuffer11GetContentsEv
+     54    0.1%    0.1%  T __ZNK2v85Value8ToStringENS_5LocalINS_7ContextEEE
+     51    0.1%    0.1%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, node::InternalCallbackScope::ResourceExpectation)
+     51    0.1%    0.1%  T node::AsyncWrap::EmitTraceEventBefore()
+     50    0.1%    0.1%  t node::LibuvStreamWrap::Initialize(v8::Local<v8::Object>, v8::Local<v8::Value>, v8::Local<v8::Context>, void*)::$_0::__invoke(v8::FunctionCallbackInfo<v8::Value> const&)
+     50    0.1%    0.1%  T void node::StreamBase::JSMethod<&(node::StreamBase::Writev(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+     50    0.1%    0.1%  T node::StringBytes::Encode(v8::Isolate*, char const*, unsigned long, node::encoding, v8::Local<v8::Value>*)
+     49    0.1%    0.1%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb1EEC1EPNS_8internal7IsolateENS_5LocalINS_7ContextEEE
+     48    0.1%    0.1%  t __ZN2v88internal12_GLOBAL__N_124ProbeInstantiationsCacheEPNS0_7IsolateEiNS1_11CachingModeE
+     48    0.1%    0.1%  T v8::internal::Accessors::BoundFunctionLengthGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     47    0.1%    0.1%  t node::(anonymous namespace)::Parser::Execute(char*, unsigned long)
+     47    0.1%    0.1%  T __ZNK2v85Value17IsArrayBufferViewEv
+     47    0.1%    0.1%  T __ZN2v87Isolate17GetCurrentContextEv
+     46    0.1%    0.1%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     46    0.1%    0.1%  T node::Environment::GetNow()
+     45    0.1%    0.1%  t _free_small
+     44    0.1%    0.1%  T node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+     44    0.1%    0.1%  T __ZNK2v85Value10IsFunctionEv
+     42    0.1%    0.1%  T node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)
+     39    0.1%    0.1%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+     38    0.1%    0.1%  T __simple_vsprintf
+     38    0.1%    0.1%  T __ZN2v86String14NewFromOneByteEPNS_7IsolateEPKhNS_13NewStringTypeEi
+     37    0.1%    0.1%  T __ZN2v811HandleScopeD1Ev
+     36    0.1%    0.1%  t __os_nospin_lock_unlock_slow
+     36    0.1%    0.1%  T _mach_msg
+     36    0.1%    0.1%  T __ZN2v87Context4ExitEv
+     35    0.1%    0.1%  t node::AsyncHooks::pop_async_id(double)
+     35    0.1%    0.1%  T node::StringBytes::Write(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>, node::encoding, int*)
+     34    0.1%    0.1%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+     34    0.1%    0.1%  t __ZN2v88internalL26Builtin_Impl_HandleApiCallENS0_16BuiltinArgumentsEPNS0_7IsolateE
+     34    0.1%    0.1%  T ___carbon_delete
+     33    0.1%    0.1%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_url(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+     33    0.1%    0.1%  t __ZNSt3__16vectorIyNS_9allocatorIyEEE21__push_back_slow_pathIRKyEEvOT_
+     33    0.1%    0.1%  t __ZN2v88internal12_GLOBAL__N_119HandleApiCallHelperILb1EEENS0_11MaybeHandleINS0_6ObjectEEEPNS0_7IsolateENS0_6HandleINS0_10HeapObjectEEESA_NS8_INS0_20FunctionTemplateInfoEEENS8_IS4_EENS0_16BuiltinArgumentsE
+     33    0.1%    0.1%  T __ZN2v87Isolate10GetCurrentEv
+     33    0.1%    0.1%  T __ZN2v811HandleScopeC1EPNS_7IsolateE
+     30    0.1%    0.1%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+     26    0.1%    0.1%  t node::MaybeStackBuffer<char, 1024ul>::AllocateSufficientStorage(unsigned long)
+     26    0.1%    0.1%  T node::Utf8Value::Utf8Value(v8::Isolate*, v8::Local<v8::Value>)
+     25    0.1%    0.1%  T v8::internal::FunctionCallbackArguments::FunctionCallbackArguments(v8::internal::Isolate*, v8::internal::Object, v8::internal::HeapObject, v8::internal::Object, v8::internal::HeapObject, unsigned long*, int)
+     25    0.1%    0.1%  T node::StringBytes::StorageSize(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+     24    0.1%    0.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     24    0.1%    0.1%  t node::(anonymous namespace)::ExternString<v8::String::ExternalOneByteStringResource, char>::NewSimpleFromCopy(v8::Isolate*, char const*, unsigned long, v8::Local<v8::Value>*)
+     24    0.1%    0.1%  t __ZNK2v88internal4wasm16StreamingDecoder13DecodingState20is_finishing_allowedEv
+     24    0.1%    0.1%  T node::Emit(node::Environment*, double, node::AsyncHooks::Fields, v8::Local<v8::Function>)
+     24    0.1%    0.1%  T __ZNK2v85Value12IntegerValueENS_5LocalINS_7ContextEEE
+     24    0.1%    0.1%  T __ZN2v87Context5EnterEv
+     23    0.1%    0.1%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     23    0.1%    0.1%  t node::(anonymous namespace)::Parser::MaybePause()
+     23    0.1%    0.1%  T __ZN2v88internal10ApiNatives17InstantiateObjectEPNS0_7IsolateENS0_6HandleINS0_18ObjectTemplateInfoEEENS4_INS0_10JSReceiverEEE
+     22    0.0%    0.0%  t std::__1::__function::__func<node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)::'lambda'(), std::__1::allocator<node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)::'lambda'()>, void ()>::operator()()
+     22    0.0%    0.0%  t _allocate_pages
+     22    0.0%    0.0%  T __ZN2v820EscapableHandleScope6EscapeEPm
+     21    0.0%    0.0%  T node::crypto::Hash::HashDigest(v8::FunctionCallbackInfo<v8::Value> const&)
+     21    0.0%    0.0%  T __ZN2v815ArrayBufferView6BufferEv
+     19    0.0%    0.0%  t node::StreamBase::Write(uv_buf_t*, unsigned long, uv_stream_s*, v8::Local<v8::Object>)
+     19    0.0%    0.0%  t node::OnScopeLeave::~OnScopeLeave()
+     19    0.0%    0.0%  T __ZN2v85Array3NewEPNS_7IsolateEPNS_5LocalINS_5ValueEEEm
+     19    0.0%    0.0%  T __ZN2v820EscapableHandleScopeC1EPNS_7IsolateE
+     18    0.0%    0.0%  T node::LibuvStreamWrap::OnUvAlloc(unsigned long, uv_buf_t*)
+     18    0.0%    0.0%  T __ZN2v87Integer15NewFromUnsignedEPNS_7IsolateEj
+     17    0.0%    0.0%  t std::__1::__hash_table<int, std::__1::hash<int>, std::__1::equal_to<int>, std::__1::allocator<int> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<int, void*>*>)
+     17    0.0%    0.0%  t node::(anonymous namespace)::StringPtr::Save()
+     16    0.0%    0.0%  T non-virtual thunk to node::LibuvStreamWrap::IsAlive()
+     16    0.0%    0.0%  T __ZN2v815ArrayBufferView10ByteLengthEv
+     15    0.0%    0.0%  t node::(anonymous namespace)::StringPtr::Reset()
+     15    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_117InstantiateObjectEPNS0_7IsolateENS0_6HandleINS0_18ObjectTemplateInfoEEENS4_INS0_10JSReceiverEEEbb
+     15    0.0%    0.0%  T node::LibuvStreamWrap::OnUvRead(long, uv_buf_t const*)
+     15    0.0%    0.0%  T node::LibuvStreamWrap::DoTryWrite(uv_buf_t**, unsigned long*)
+     15    0.0%    0.0%  T __ZNK2v86String12WriteOneByteEPNS_7IsolateEPhiii
+     14    0.0%    0.0%  t node::(anonymous namespace)::Parser::CreateHeaders()
+     14    0.0%    0.0%  T __ZN2v87Isolate9InContextEv
+     14    0.0%    0.0%  T __ZN2v87Integer3NewEPNS_7IsolateEi
+     13    0.0%    0.0%  t node::MaybeStackBuffer<char, 1024ul>::SetLengthAndZeroTerminate(unsigned long)
+     13    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_header_field(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+     13    0.0%    0.0%  T node::crypto::Hash::HashUpdate(v8::FunctionCallbackInfo<v8::Value> const&)
+     13    0.0%    0.0%  T __ZNK2v85Value8IsObjectEv
+     12    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_message_complete())>::Raw(llhttp__internal_s*)
+     12    0.0%    0.0%  T __ZNK2v815ArrayBufferView9HasBufferEv
+     12    0.0%    0.0%  T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+     11    0.0%    0.0%  t node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+     11    0.0%    0.0%  t node::NodeArrayBufferAllocator::Free(void*, unsigned long)
+     11    0.0%    0.0%  t node::MaybeStackBuffer<uv_buf_t, 16ul>::AllocateSufficientStorage(unsigned long)
+     11    0.0%    0.0%  t node::LibuvStreamWrap::ReadStart()::$_1::__invoke(uv_handle_s*, unsigned long, uv_buf_t*)
+     11    0.0%    0.0%  t node::(anonymous namespace)::StringPtr::Update(char const*, unsigned long)
+     11    0.0%    0.0%  T node::DTRACE_HTTP_SERVER_RESPONSE(v8::FunctionCallbackInfo<v8::Value> const&)
+     11    0.0%    0.0%  T node::Buffer::HasInstance(v8::Local<v8::Value>)
+     11    0.0%    0.0%  T node::AsyncWrap::EmitAfter(node::Environment*, double)
+     11    0.0%    0.0%  T __ZN2v87Isolate13RunMicrotasksEv
+     10    0.0%    0.0%  t unsigned char* node::UncheckedRealloc<unsigned char>(unsigned char*, unsigned long)
+     10    0.0%    0.0%  t _unwind_stack_from_table_index
+     10    0.0%    0.0%  t _tiny_malloc_from_free_list
+     10    0.0%    0.0%  T __ZNK2v85Value7IsArrayEv
+     10    0.0%    0.0%  T __ZN2v86Object18InternalFieldCountEv
+      9    0.0%    0.0%  t __os_nospin_lock_lock_slow
+      9    0.0%    0.0%  T ___mac_get_link
+      9    0.0%    0.0%  T __ZN2v88internal21PerIsolateAssertScopeILNS0_20PerIsolateAssertTypeE0ELb1EE9IsAllowedEPNS0_7IsolateE
+      8    0.0%    0.0%  t non-virtual thunk to node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)
+      8    0.0%    0.0%  t node::TraceEventScope::TraceEventScope(char const*, char const*, void*)
+      8    0.0%    0.0%  t node::LibuvStreamWrap::ReadStart()::$_2::__invoke(uv_stream_s*, long, uv_buf_t const*)
+      8    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_message_begin())>::Raw(llhttp__internal_s*)
+      8    0.0%    0.0%  t node::(anonymous namespace)::ExternString<v8::String::ExternalOneByteStringResource, char>::New(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>*)
+      8    0.0%    0.0%  t _allocate_pages_securely
+      8    0.0%    0.0%  t __ZN2v88internal22HandleScopeImplementer12EnterContextENS0_7ContextE
+      8    0.0%    0.0%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.0%    0.0%  T ___mach_stack_logging_frames_for_uniqued_stack
+      7    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_header_value(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      7    0.0%    0.0%  t _szone_size
+      7    0.0%    0.0%  t __ZNSt3__16vectorINS_4pairImPN2v88internal4PageEEENS_9allocatorIS6_EEE21__push_back_slow_pathIS6_EEvOT_
+      7    0.0%    0.0%  T node::NodePlatform::MonotonicallyIncreasingTime()
+      7    0.0%    0.0%  T node::DTRACE_HTTP_SERVER_REQUEST(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.0%    0.0%  T __os_nospin_lock_unlock
+      7    0.0%    0.0%  T __ZNK2v86String17IsExternalOneByteEv
+      6    0.0%    0.0%  t std::__1::__function::__func<node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)::'lambda'(), std::__1::allocator<node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)::'lambda'()>, void ()>::destroy()
+      6    0.0%    0.0%  t node::MaybeStackBuffer<char, 1024ul>::SetLength(unsigned long)
+      6    0.0%    0.0%  T non-virtual thunk to node::LibuvStreamWrap::GetAsyncWrap()
+      6    0.0%    0.0%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.0%    0.0%  T node::BaseObject::MakeWeak()::'lambda'(v8::WeakCallbackInfo<node::BaseObject> const&)::__invoke(v8::WeakCallbackInfo<node::BaseObject> const&)
+      6    0.0%    0.0%  T __ZNK2v85Array6LengthEv
+      6    0.0%    0.0%  T __ZN2v88internal21PerIsolateAssertScopeILNS0_20PerIsolateAssertTypeE1ELb0EE9IsAllowedEPNS0_7IsolateE
+      5    0.0%    0.0%  t node::(anonymous namespace)::Parser::OnStreamAlloc(unsigned long)
+      5    0.0%    0.0%  t _insert_node
+      5    0.0%    0.0%  t __ZNK2v88internal4wasm16StreamingDecoder15DecodeSectionID20is_finishing_allowedEv
+      5    0.0%    0.0%  T non-virtual thunk to node::LibuvStreamWrap::DoTryWrite(uv_buf_t**, unsigned long*)
+      5    0.0%    0.0%  T __pthread_qos_class_decode
+      5    0.0%    0.0%  T __ZN2v811HandleScopeD2Ev
+      4    0.0%    0.0%  t std::__1::__function::__func<node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)::'lambda'(), std::__1::allocator<node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)::'lambda'()>, void ()>::__clone(std::__1::__function::__base<void ()>*) const
+      4    0.0%    0.0%  t non-virtual thunk to node::(anonymous namespace)::Parser::OnStreamAlloc(unsigned long)
+      4    0.0%    0.0%  t node::NodeArrayBufferAllocator::AllocateUninitialized(unsigned long)
+      4    0.0%    0.0%  T _pthread_mutexattr_settype
+      4    0.0%    0.0%  T ___terminate_with_payload
+      4    0.0%    0.0%  T ___mach_stack_logging_uniquing_table_read_stack
+      3    0.0%    0.0%  t _szone_pressure_relief
+      3    0.0%    0.0%  T node::TTYWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  T __pthread_qos_class_encode_workqueue
+      3    0.0%    0.0%  T __ZNK2v86String6LengthEv
+      3    0.0%    0.0%  T __ZNK2v85Value6IsTrueEv
+      3    0.0%    0.0%  T __ZN2v88internal21PerIsolateAssertScopeILNS0_20PerIsolateAssertTypeE2ELb0EE9IsAllowedEPNS0_7IsolateE
+      3    0.0%    0.0%  T __ZN2v815ArrayBufferView10ByteOffsetEv
+      2    0.0%    0.0%  t std::__1::deque<std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> >, std::__1::allocator<std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> > > >::push_back(std::__1::unique_ptr<node::inspector::Request, std::__1::default_delete<node::inspector::Request> >&&)
+      2    0.0%    0.0%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t node::TraceEventScope::~TraceEventScope()
+      2    0.0%    0.0%  t node::TaskQueue<node::DelayedTask>::Push(std::__1::unique_ptr<node::DelayedTask, std::__1::default_delete<node::DelayedTask> >)
+      2    0.0%    0.0%  t node::Environment::StartProfilerIdleNotifier()::$_4::__invoke(uv_check_s*)
+      2    0.0%    0.0%  T node::Environment::CheckImmediate(uv_check_s*)
+      2    0.0%    0.0%  T node::Buffer::Length(v8::Local<v8::Value>)
+      2    0.0%    0.0%  T node::Buffer::Data(v8::Local<v8::Value>)
+      2    0.0%    0.0%  T _setaudit
+      2    0.0%    0.0%  T _mprotect
+      2    0.0%    0.0%  T ___mac_get_mount
+      1    0.0%    0.0%  t v8::Platform::CallLowPriorityTaskOnWorkerThread(std::__1::unique_ptr<v8::Task, std::__1::default_delete<v8::Task> >)
+      1    0.0%    0.0%  t unsigned long std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::__erase_unique<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      1    0.0%    0.0%  t node::TaskQueue<v8::Task>::PopAll()
+      1    0.0%    0.0%  t node::BaseObject::~BaseObject()
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t _dec
+      1    0.0%    0.0%  t __read_images
+      1    0.0%    0.0%  t __pthread_mutex_unlock_slow
+      1    0.0%    0.0%  t __pthread_mutex_lock_slow
+      1    0.0%    0.0%  t ___collate_equiv_value
+      1    0.0%    0.0%  t __ZNSt3__16vectorIiN2v88internal13ZoneAllocatorIiEEE21__push_back_slow_pathIiEEvOT_
+      1    0.0%    0.0%  t __ZN2v88internal15DescriptorArray6AppendEPNS0_10DescriptorE
+      1    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_119HandleApiCallHelperILb0EEENS0_11MaybeHandleINS0_6ObjectEEEPNS0_7IsolateENS0_6HandleINS0_10HeapObjectEEESA_NS8_INS0_20FunctionTemplateInfoEEENS8_IS4_EENS0_16BuiltinArgumentsE
+      1    0.0%    0.0%  T v8::internal::RootIndexMap::RootIndexMap(v8::internal::Isolate*)
+      1    0.0%    0.0%  T std::__1::basic_istream<wchar_t, std::__1::char_traits<wchar_t> >::get()
+      1    0.0%    0.0%  T node::WorkerThreadsTaskRunner::PostTask(std::__1::unique_ptr<v8::Task, std::__1::default_delete<v8::Task> >)
+      1    0.0%    0.0%  T node::NodePlatform::CallOnWorkerThread(std::__1::unique_ptr<v8::Task, std::__1::default_delete<v8::Task> >)
+      1    0.0%    0.0%  T node::NodeArrayBufferAllocator::Allocate(unsigned long)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitBefore(node::Environment*, double)
+      1    0.0%    0.0%  T _ungetwc
+      1    0.0%    0.0%  T _pthread_setname_np
+      1    0.0%    0.0%  T _pthread_get_stacksize_np
+      1    0.0%    0.0%  T _pthread_get_stackaddr_np
+      1    0.0%    0.0%  T _pthread_attr_get_qos_class_np
+      1    0.0%    0.0%  T _platform_task_copy_next_thread
+      1    0.0%    0.0%  T _mach_vm_allocate
+      1    0.0%    0.0%  T _fprintf_l
+      1    0.0%    0.0%  T __pthread_workqueue_addthreads
+      1    0.0%    0.0%  T __ZN2v88internal5Scope28AllocateVariablesRecursivelyEv
+      1    0.0%    0.0%  T __ZN2v88internal21PerIsolateAssertScopeILNS0_20PerIsolateAssertTypeE0ELb0EEC1EPNS0_7IsolateE
+      1    0.0%    0.0%  T __ZN2v88internal11VariableMap7DeclareEPNS0_4ZoneEPNS0_5ScopeEPKNS0_12AstRawStringENS0_12VariableModeENS0_12VariableKindENS0_18InitializationFlagENS0_17MaybeAssignedFlagEPb
+      1    0.0%    0.0%  T __ZN2v87Isolate7SetIdleEb
+
+ [Summary]:
+   ticks  total  nonlib   name
+   7570   16.7%   16.9%  JavaScript
+  32565   71.9%   72.7%  C++
+   6755   14.9%   15.1%  GC
+    503    1.1%          Shared libraries
+   4659   10.3%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+  16339   77.8%   36.1%  T __ZN2v88internal21Builtin_MakeTypeErrorEiPmPNS0_7IsolateE
+   2322   11.1%    5.1%  T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+    139    0.7%    0.3%  T __ZN2v86Object3GetENS_5LocalINS_7ContextEEEj
+    138    0.7%    0.3%  T __ZNK2v86String9WriteUtf8EPNS_7IsolateEPciPii
+    136    0.6%    0.3%  t _szone_malloc_should_clear
+     87    0.4%    0.2%  T node::StreamBase::Writev(v8::FunctionCallbackInfo<v8::Value> const&)
+     86    0.4%    0.2%  T _vm_region_recurse_64
+     85    0.4%    0.2%  T node::ParseEncoding(char const*, node::encoding)
+     67    0.3%    0.1%  t node::(anonymous namespace)::GetLibuvNow(v8::FunctionCallbackInfo<v8::Value> const&)
+     66    0.3%    0.1%  T v8::internal::Accessors::FunctionLengthGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     65    0.3%    0.1%  T __simple_dprintf
+     61    0.3%    0.1%  T __ZNK2v86String10Utf8LengthEPNS_7IsolateE
+     60    0.3%    0.1%  t __malloc_initialize
+     58    0.3%    0.1%  T __ZN2v811ArrayBuffer11GetContentsEv
+     56    0.3%    0.1%  t __enlarge
+     54    0.3%    0.1%  T __ZNK2v85Value8ToStringENS_5LocalINS_7ContextEEE
+     52    0.2%    0.1%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+     50    0.2%    0.1%  T node::StringBytes::Encode(v8::Isolate*, char const*, unsigned long, node::encoding, v8::Local<v8::Value>*)
+     48    0.2%    0.1%  T void node::StreamBase::JSMethod<&(node::StreamBase::Writev(v8::FunctionCallbackInfo<v8::Value> const&))>(v8::FunctionCallbackInfo<v8::Value> const&)
+     48    0.2%    0.1%  T v8::internal::Accessors::BoundFunctionLengthGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     47    0.2%    0.1%  T __ZNK2v85Value17IsArrayBufferViewEv
+     46    0.2%    0.1%  T node::Environment::GetNow()
+     42    0.2%    0.1%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb0EEC1EPNS_8internal7IsolateENS_5LocalINS_7ContextEEE
+     39    0.2%    0.1%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+     38    0.2%    0.1%  t __ZN2v88internal6String7FlattenEPNS0_7IsolateENS0_6HandleIS1_EENS0_13PretenureFlagE
+     37    0.2%    0.1%  T ___mach_stack_logging_enumerate_records
+     35    0.2%    0.1%  T node::StringBytes::Write(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>, node::encoding, int*)
+     33    0.2%    0.1%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+     32    0.2%    0.1%  T __ZN2v87Isolate17GetCurrentContextEv
+     27    0.1%    0.1%  T _free
+     26    0.1%    0.1%  t node::MaybeStackBuffer<char, 1024ul>::AllocateSufficientStorage(unsigned long)
+     26    0.1%    0.1%  t _small_free_list_remove_ptr_no_clear
+     26    0.1%    0.1%  T node::Utf8Value::Utf8Value(v8::Isolate*, v8::Local<v8::Value>)
+     25    0.1%    0.1%  T node::StringBytes::StorageSize(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+     24    0.1%    0.1%  t node::(anonymous namespace)::ExternString<v8::String::ExternalOneByteStringResource, char>::NewSimpleFromCopy(v8::Isolate*, char const*, unsigned long, v8::Local<v8::Value>*)
+     23    0.1%    0.1%  T __ZN2v811HandleScope10InitializeEPNS_7IsolateE
+     21    0.1%    0.0%  T __ZN2v815ArrayBufferView6BufferEv
+     19    0.1%    0.0%  t node::StreamBase::Write(uv_buf_t*, unsigned long, uv_stream_s*, v8::Local<v8::Object>)
+     19    0.1%    0.0%  T __ZNK2v85Value12IntegerValueENS_5LocalINS_7ContextEEE
+     18    0.1%    0.0%  T __ZN2v811HandleScopeC1EPNS_7IsolateE
+     16    0.1%    0.0%  T non-virtual thunk to node::LibuvStreamWrap::IsAlive()
+     16    0.1%    0.0%  T __ZN2v87Integer15NewFromUnsignedEPNS_7IsolateEj
+     16    0.1%    0.0%  T __ZN2v86String14NewFromOneByteEPNS_7IsolateEPKhNS_13NewStringTypeEi
+     16    0.1%    0.0%  T __ZN2v815ArrayBufferView10ByteLengthEv
+     16    0.1%    0.0%  T __ZN2v811HandleScopeD1Ev
+     15    0.1%    0.0%  T node::LibuvStreamWrap::DoTryWrite(uv_buf_t**, unsigned long*)
+     15    0.1%    0.0%  T __ZNK2v86String12WriteOneByteEPNS_7IsolateEPhiii
+     14    0.1%    0.0%  t _update_cache_for_file_streams
+     13    0.1%    0.0%  t node::MaybeStackBuffer<char, 1024ul>::SetLengthAndZeroTerminate(unsigned long)
+     13    0.1%    0.0%  t _free_small
+     13    0.1%    0.0%  T node::crypto::Hash::HashUpdate(v8::FunctionCallbackInfo<v8::Value> const&)
+     13    0.1%    0.0%  T __ZNK2v85Value8IsObjectEv
+     12    0.1%    0.0%  T __ZNK2v815ArrayBufferView9HasBufferEv
+     11    0.1%    0.0%  t node::task_queue::RunMicrotasks(v8::FunctionCallbackInfo<v8::Value> const&)
+     11    0.1%    0.0%  t node::NodeArrayBufferAllocator::Free(void*, unsigned long)
+     11    0.1%    0.0%  t node::MaybeStackBuffer<uv_buf_t, 16ul>::AllocateSufficientStorage(unsigned long)
+     11    0.1%    0.0%  t __os_nospin_lock_unlock_slow
+     11    0.1%    0.0%  T node::crypto::Hash::HashDigest(v8::FunctionCallbackInfo<v8::Value> const&)
+     11    0.1%    0.0%  T node::DTRACE_HTTP_SERVER_RESPONSE(v8::FunctionCallbackInfo<v8::Value> const&)
+     11    0.1%    0.0%  T node::Buffer::HasInstance(v8::Local<v8::Value>)
+     10    0.0%    0.0%  t unsigned char* node::UncheckedRealloc<unsigned char>(unsigned char*, unsigned long)
+     10    0.0%    0.0%  T __ZNK2v85Value7IsArrayEv
+     10    0.0%    0.0%  T __ZN2v87Isolate13RunMicrotasksEv
+     10    0.0%    0.0%  T __ZN2v86Object18InternalFieldCountEv
+      8    0.0%    0.0%  t node::(anonymous namespace)::ExternString<v8::String::ExternalOneByteStringResource, char>::New(v8::Isolate*, char*, unsigned long, v8::Local<v8::Value>*)
+      7    0.0%    0.0%  t _szone_size
+      7    0.0%    0.0%  t _allocate_pages
+      7    0.0%    0.0%  T node::DTRACE_HTTP_SERVER_REQUEST(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.0%    0.0%  T __ZNK2v86String17IsExternalOneByteEv
+      6    0.0%    0.0%  t node::MaybeStackBuffer<char, 1024ul>::SetLength(unsigned long)
+      6    0.0%    0.0%  T non-virtual thunk to node::LibuvStreamWrap::GetAsyncWrap()
+      6    0.0%    0.0%  T __ZNK2v85Array6LengthEv
+      5    0.0%    0.0%  T non-virtual thunk to node::LibuvStreamWrap::DoTryWrite(uv_buf_t**, unsigned long*)
+      4    0.0%    0.0%  t node::NodeArrayBufferAllocator::AllocateUninitialized(unsigned long)
+      3    0.0%    0.0%  T __ZNK2v86String6LengthEv
+      3    0.0%    0.0%  T __ZNK2v85Value6IsTrueEv
+      3    0.0%    0.0%  T __ZN2v815ArrayBufferView10ByteOffsetEv
+      2    0.0%    0.0%  T node::Buffer::Length(v8::Local<v8::Value>)
+      2    0.0%    0.0%  T node::Buffer::Data(v8::Local<v8::Value>)
+      2    0.0%    0.0%  T __ZN2v88internal18Builtin_ArrayShiftEiPmPNS0_7IsolateE
+      1    0.0%    0.0%  t _unwind_stack_from_table_index
+      1    0.0%    0.0%  t _tiny_malloc_from_free_list
+      1    0.0%    0.0%  t _allocate_pages_securely
+      1    0.0%    0.0%  t __os_nospin_lock_lock_slow
+      1    0.0%    0.0%  T _mach_vm_purgable_control
+      1    0.0%    0.0%  T ___mac_get_link
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  22624   49.9%  T __ZN2v88internal21Builtin_MakeTypeErrorEiPmPNS0_7IsolateE
+   6478   28.6%    T __ZN2v88internal21Builtin_MakeTypeErrorEiPmPNS0_7IsolateE
+   2242   34.6%      LazyCompile: *setCharset /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:250:41
+   2242  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+   2208   98.5%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+   2208  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+     34    1.5%          LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     34  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+   1086   16.8%      LazyCompile: *header /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:750:29
+   1084   99.8%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+   1063   98.1%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+   1063  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+     21    1.9%          LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     11   52.4%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      9   42.9%            LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      1    4.8%            LazyCompile: ~handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+   1065   16.4%      T __ZN2v88internal21Builtin_MakeTypeErrorEiPmPNS0_7IsolateE
+    638   59.9%        LazyCompile: *setCharset /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:250:41
+    638  100.0%          LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    631   98.9%            LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      7    1.1%            LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    408   38.3%        LazyCompile: *contentType /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:590:32
+    408  100.0%          LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    392   96.1%            LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     16    3.9%            LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    489    7.5%      LazyCompile: *contentType /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:590:32
+    489  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    475   97.1%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    475  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+     14    2.9%          LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     13   92.9%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      1    7.1%            LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+    347    5.4%      LazyCompile: *expressInit /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/middleware/init.js:29:30
+    347  100.0%        LazyCompile: *trim_prefix /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:288:23
+    344   99.1%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:275:64
+    344  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:176:16
+    310    4.8%      LazyCompile: *_storeHeader _http_outgoing.js:276:22
+    309   99.7%        LazyCompile: *write_ _http_outgoing.js:555:16
+    309  100.0%          LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    307   99.4%            LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    229    3.5%      LazyCompile: *Readable.read _stream_readable.js:377:35
+    183   79.9%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     42   18.3%        LazyCompile: *resume_ _stream_readable.js:933:17
+     42  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+    153    2.4%      LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    142   92.8%        LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    142  100.0%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+    142  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+     11    7.2%        LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      7   63.6%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      7  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+      2   18.2%          LazyCompile: ~handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%            LazyCompile: ~next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      2   18.2%          LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%            LazyCompile: ~next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+    108    1.7%      LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:176:16
+    108  100.0%        LazyCompile: *expressInit /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/middleware/init.js:29:30
+    107   99.1%          LazyCompile: *trim_prefix /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:288:23
+    107  100.0%            LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:275:64
+    108    1.7%      LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/request.js:463:36
+    108  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    107   99.1%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    107  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+    944    4.2%    LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    925   98.0%      LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    925  100.0%        LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+    925  100.0%          LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+    925  100.0%            LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:275:64
+     19    2.0%      LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     16   84.2%        LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+     16  100.0%          LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+     16  100.0%            LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:275:64
+      3   15.8%        LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      3  100.0%          LazyCompile: ~next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      3  100.0%            LazyCompile: ~dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+    895    4.0%    LazyCompile: *setCharset /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:250:41
+    895  100.0%      LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    881   98.4%        LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    881  100.0%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+    881  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+     14    1.6%        LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     14  100.0%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+     14  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+    818    3.6%    LazyCompile: *writevGeneric internal/stream_base_commons.js:107:23
+    818  100.0%      LazyCompile: *clearBuffer _stream_writable.js:498:21
+    818  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    801   97.9%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    801  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+     17    2.1%          LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     13   76.5%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      3   17.6%            LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      1    5.9%            LazyCompile: ~handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+    448    2.0%    LazyCompile: *parserOnHeadersComplete _http_common.js:71:33
+    383    1.7%    LazyCompile: *generateETag /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:275:32
+    383  100.0%      LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    383  100.0%        LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    383  100.0%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+    383  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+    366    1.6%    LazyCompile: *contentType /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:590:32
+    366  100.0%      LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    358   97.8%        LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    358  100.0%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+    358  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+      8    2.2%        LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      7   87.5%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      7  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+      1   12.5%          LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+    346    1.5%    LazyCompile: *header /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:750:29
+    344   99.4%      LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    337   98.0%        LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    337  100.0%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+    337  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+      7    2.0%        LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      5   71.4%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      5  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+      1   14.3%          LazyCompile: ~handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      1   14.3%          LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+    324    1.4%    LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+    257    1.1%    LazyCompile: *write_ _http_outgoing.js:555:16
+    257  100.0%      LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    254   98.8%        LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    254  100.0%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+    254  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+      3    1.2%        LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      2   66.7%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      2  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+      1   33.3%          LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            LazyCompile: ~next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+
+   4659   10.3%  UNKNOWN
+   3156   67.7%    LazyCompile: *writevGeneric internal/stream_base_commons.js:107:23
+   3147   99.7%      LazyCompile: *clearBuffer _stream_writable.js:498:21
+   3147  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+   3055   97.1%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+   3055  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+     92    2.9%          LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     60   65.2%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+     28   30.4%            LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      4    4.3%            LazyCompile: ~handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+    120    2.6%    T __ZN2v88internal21Builtin_MakeTypeErrorEiPmPNS0_7IsolateE
+     89   74.2%      LazyCompile: *setCharset /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:250:41
+     89  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+     89  100.0%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     89  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+     17   14.2%      LazyCompile: *header /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:750:29
+     17  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+     17  100.0%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     17  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      4    3.3%      LazyCompile: *contentType /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:590:32
+      4  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+      4  100.0%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      4  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      3    2.5%      LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/request.js:463:36
+      3  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+      3  100.0%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      3  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      2    1.7%      T __ZN2v88internal21Builtin_MakeTypeErrorEiPmPNS0_7IsolateE
+      2  100.0%        LazyCompile: *setCharset /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:250:41
+      2  100.0%          LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+      2  100.0%            LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      2    1.7%      LazyCompile: *expressInit /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/middleware/init.js:29:30
+      2  100.0%        LazyCompile: *trim_prefix /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:288:23
+      2  100.0%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:275:64
+      2  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:176:16
+     56    1.2%    LazyCompile: *onFinish _http_outgoing.js:647:18
+     56  100.0%      LazyCompile: *onCorkedFinish _stream_writable.js:672:24
+     56  100.0%        LazyCompile: *afterWrite _stream_writable.js:479:20
+     56  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+
+   1645    3.6%  T node::crypto::Hash::New(v8::FunctionCallbackInfo<v8::Value> const&)
+   1645  100.0%    T __ZN2v88internal21Builtin_HandleApiCallEiPmPNS0_7IsolateE
+   1612   98.0%      LazyCompile: *generateETag /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:275:32
+   1612  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+   1610   99.9%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+   1610  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+
+   1072    2.4%  T _munmap
+     30    2.8%    T __ZN2v88internal21Builtin_MakeTypeErrorEiPmPNS0_7IsolateE
+      7   23.3%      LazyCompile: *Readable.read _stream_readable.js:377:35
+      3   42.9%        LazyCompile: *resume_ _stream_readable.js:933:17
+      3  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      3   42.9%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1   14.3%        LazyCompile: ~flow _stream_readable.js:957:14
+      1  100.0%          LazyCompile: ~resume_ _stream_readable.js:933:17
+      1  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      3   10.0%      LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      3  100.0%        LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      3  100.0%          LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+      3  100.0%            LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:275:64
+      2    6.7%      LazyCompile: *setStreamTimeout internal/stream_base_commons.js:202:26
+      2  100.0%        LazyCompile: *parserOnIncoming _http_server.js:640:26
+      2  100.0%          LazyCompile: *parserOnHeadersComplete _http_common.js:71:33
+      2    6.7%      LazyCompile: *resOnFinish _http_server.js:595:21
+      2  100.0%        LazyCompile: *onFinish _http_outgoing.js:647:18
+      2  100.0%          LazyCompile: *onCorkedFinish _stream_writable.js:672:24
+      2  100.0%            LazyCompile: *afterWrite _stream_writable.js:479:20
+      2    6.7%      LazyCompile: *parserOnIncoming _http_server.js:640:26
+      2  100.0%        LazyCompile: *parserOnHeadersComplete _http_common.js:71:33
+      2    6.7%      LazyCompile: *onwrite _stream_writable.js:445:17
+      2  100.0%        LazyCompile: *writevGeneric internal/stream_base_commons.js:107:23
+      2  100.0%          LazyCompile: *clearBuffer _stream_writable.js:498:21
+      2  100.0%            LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+      2    6.7%      LazyCompile: *nextTick internal/process/task_queues.js:114:18
+      1   50.0%        LazyCompile: *resOnFinish _http_server.js:595:21
+      1  100.0%          LazyCompile: *onFinish _http_outgoing.js:647:18
+      1  100.0%            LazyCompile: *onCorkedFinish _stream_writable.js:672:24
+      1   50.0%        LazyCompile: *_dump _http_incoming.js:273:49
+      1  100.0%          LazyCompile: *resOnFinish _http_server.js:595:21
+      1  100.0%            LazyCompile: *onFinish _http_outgoing.js:647:18
+      2    6.7%      LazyCompile: *header /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:750:29
+      2  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+      2  100.0%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      2  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      1    3.3%      LazyCompile: ~validateString internal/validators.js:105:24
+      1  100.0%        LazyCompile: ~Hash internal/crypto/hash.js:35:14
+      1  100.0%          LazyCompile: ~createHash crypto.js:106:20
+      1  100.0%            LazyCompile: ~entitytag /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/etag/index.js:39:20
+      1    3.3%      LazyCompile: ~_dump _http_incoming.js:273:49
+      1  100.0%        LazyCompile: *resOnFinish _http_server.js:595:21
+      1  100.0%          LazyCompile: *emit events.js:149:44
+      1  100.0%            LazyCompile: ~onFinish _http_outgoing.js:647:18
+      1    3.3%      LazyCompile: *socketOnWrap _http_server.js:757:22
+      1  100.0%        LazyCompile: *parserOnIncoming _http_server.js:640:26
+      1  100.0%          LazyCompile: *parserOnHeadersComplete _http_common.js:71:33
+      1    3.3%      LazyCompile: *setCharset /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:250:41
+      1  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+      1  100.0%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      1  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      1    3.3%      LazyCompile: *query /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/middleware/query.js:39:24
+      1  100.0%        LazyCompile: *trim_prefix /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:288:23
+      1  100.0%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:275:64
+      1  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:176:16
+      1    3.3%      LazyCompile: *parserOnHeadersComplete _http_common.js:71:33
+      1    3.3%      LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/index.js:176:16
+      1  100.0%        LazyCompile: *app /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/express.js:38:21
+      1  100.0%          LazyCompile: *emit events.js:149:44
+      1  100.0%            LazyCompile: *parserOnIncoming _http_server.js:640:26
+      1    3.3%      LazyCompile: *append internal/linkedlist.js:29:16
+      1  100.0%        LazyCompile: *onParserExecute _http_server.js:505:25
+
+    564    1.2%  t _szone_malloc_should_clear
+    249   44.1%    T __ZN2v88internal21Builtin_MakeTypeErrorEiPmPNS0_7IsolateE
+    240   96.4%      LazyCompile: *setCharset /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:250:41
+    240  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+    234   97.5%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+    234  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      6    2.5%          LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      6  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      3    1.2%      LazyCompile: ~parse /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/content-type/index.js:106:16
+      3  100.0%        LazyCompile: ~setCharset /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:250:41
+      2   66.7%          LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+      2  100.0%            LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      1   33.3%          LazyCompile: ~send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+      1  100.0%            LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     69   12.2%    LazyCompile: *generateETag /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/utils.js:275:32
+     69  100.0%      LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+     69  100.0%        LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     69  100.0%          LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+     69  100.0%            LazyCompile: *dispatch /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:98:45
+     66   11.7%    LazyCompile: *writevGeneric internal/stream_base_commons.js:107:23
+     66  100.0%      LazyCompile: *clearBuffer _stream_writable.js:498:21
+     66  100.0%        LazyCompile: *send /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/response.js:107:25
+     63   95.5%          LazyCompile: *<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+     63  100.0%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+      3    4.5%          LazyCompile: ~<anonymous> /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/src/server.js:7:14
+      2   66.7%            LazyCompile: *handle /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/layer.js:86:49
+      1   33.3%            LazyCompile: *next /Users/cleancoderocker/Documents/workspaces/github/nodejskochbuch/sources/11_Skalierung_Performance_und_Sicherheit/recipe-11/node_modules/express/lib/router/route.js:114:16
+
+    500    1.1%  T ___channel_get_opt
+

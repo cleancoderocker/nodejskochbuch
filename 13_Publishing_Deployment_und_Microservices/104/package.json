@@ -1,0 +1,21 @@
+{
+  "name": "webpack-bundle",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./src/start.js",
+    "start:min": "node ./src/start.min.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "devDependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

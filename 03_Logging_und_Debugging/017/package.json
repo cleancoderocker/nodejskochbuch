@@ -1,0 +1,20 @@
+{
+  "name": "logging",
+  "version": "1.0.0",
+  "main": "./src/start.js",
+  "scripts": {
+    "start:bunyan": "node ./src/start-bunyan-streams.js",
+    "start:log4js": "node ./src/start-log4js-appenders.js",
+    "start:winston": "node ./src/start-winston-transporters.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "log4js": "^2.5.3",
+    "winston": "^3.0.0-rc1"
+  }
+}

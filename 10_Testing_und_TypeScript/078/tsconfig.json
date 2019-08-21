@@ -1,0 +1,63 @@
+{
+	"compilerOptions": {
+	  /* Basic Options */
+	  "target": "es2017",
+	  "module": "commonjs",
+	  "lib": ["es6","dom"],
+	  // "allowJs": true, 
+	  // "checkJs": true,
+	  // "jsx": "preserve",
+	  // "declaration": true,
+	  // "declarationMap": true,
+	  "sourceMap": true,
+	  // "outFile": "./",
+	  "outDir": "lib",
+	  "rootDir": "src",
+	  // "composite": true,
+	  // "removeComments": true,
+	  // "noEmit": true,
+	  // "importHelpers": true,
+	  // "downlevelIteration": true,
+	  // "isolatedModules": true,
+  
+	  /* Strict Type-Checking Options */
+	  "strict": true,
+	  // "noImplicitAny": true,
+	  // "strictNullChecks": true,
+	  // "strictFunctionTypes": true,
+	  // "strictBindCallApply": true,
+	  // "strictPropertyInitialization": true,
+	  // "noImplicitThis": true,
+	  // "alwaysStrict": true,
+  
+	  /* Additional Checks */
+	  // "noUnusedLocals": true,
+	  // "noUnusedParameters": true,
+	  // "noImplicitReturns": true,
+	  // "noFallthroughCasesInSwitch": true,
+  
+	  /* Module Resolution Options */
+	  // "moduleResolution": "node",
+	  // "baseUrl": "./",
+	  // "paths": {},
+	  // "rootDirs": [],
+	  // "typeRoots": [],
+	  // "types": [],
+	  // "allowSyntheticDefaultImports": true,
+	  "esModuleInterop": true,
+	  // "preserveSymlinks": true,
+  
+	  /* Source Map Options */
+	  // "sourceRoot": "",
+	  // "mapRoot": "",
+	  // "inlineSourceMap": true,
+	  // "inlineSources": true,
+  
+	  /* Experimental Options */
+	  // "experimentalDecorators": true,
+	  // "emitDecoratorMetadata": true,
+  
+	  /* Advanced Options */
+	  "resolveJsonModule": true
+	}
+  }

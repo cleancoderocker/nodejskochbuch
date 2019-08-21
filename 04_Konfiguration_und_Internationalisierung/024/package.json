@@ -1,0 +1,19 @@
+{
+  "name": "configuration-commandline",
+  "version": "1.0.0",
+  "main": "./src/start.js",
+  "scripts": {
+    "start": "node ./src/start.js",
+    "start:arguments": "node ./src/start-arguments.js",
+    "start:commander": "node ./src/start-commander.js",
+    "start:yargs": "node ./src/start-yargs.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "yargs": "^11.0.0"
+  }
+}

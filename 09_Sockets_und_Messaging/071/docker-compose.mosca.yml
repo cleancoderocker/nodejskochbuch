@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  broker-mosca:
+    image: matteocollina/mosca
+    container_name: mosca
+    ports:
+      - 1883:1883
+      - 80:80
+    expose:
+      - 1883
+      - 80

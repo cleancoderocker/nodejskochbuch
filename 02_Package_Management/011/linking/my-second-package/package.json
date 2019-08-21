@@ -1,0 +1,12 @@
+{
+  "name": "my-second-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "dependencies": {
+    "my-first-package": "1.0.0"
+  },
+  "author": "Philip Ackermann <info@philipackermann.de>"
+}

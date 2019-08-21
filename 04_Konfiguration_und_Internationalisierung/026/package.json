@@ -1,0 +1,16 @@
+{
+  "name": "internationalization-format",
+  "version": "1.0.0",
+  "main": "./src/start.js",
+  "scripts": {
+    "start:datetime": "node ./src/start-date-time.js",
+    "start:numbers": "node ./src/start-numbers.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+  }
+}

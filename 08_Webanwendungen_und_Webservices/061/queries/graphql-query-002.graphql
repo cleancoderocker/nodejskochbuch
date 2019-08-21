@@ -1,0 +1,11 @@
+query RootQuery {
+  artists {
+    name
+    albums {
+      title
+      tracks {
+        title
+      }
+    }
+  }
+}

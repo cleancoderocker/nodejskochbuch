@@ -1,0 +1,17 @@
+{
+  "name": "process-css",
+  "version": "1.0.0",
+  "main": "./src/start.js",
+  "scripts": {
+    "start": "node ./src/start.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "postcss": "^6.0.22",
+    "tinycolor2": "^1.4.1"
+  }
+}

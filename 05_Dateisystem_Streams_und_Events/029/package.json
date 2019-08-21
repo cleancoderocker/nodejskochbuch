@@ -1,0 +1,17 @@
+{
+  "name": "watch-files-and-directories",
+  "version": "1.0.0",
+  "main": "./src/start.js",
+  "scripts": {
+    "start:chokidar": "node ./src/start-chokidar.js",
+    "start:fs": "node ./src/start-fs.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "chokidar": "^2.0.2"
+  }
+}

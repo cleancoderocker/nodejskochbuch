@@ -1,0 +1,15 @@
+{
+  "name": "persistence-mongodb",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./src/connect.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "mongodb": "^3.0.2"
+  }
+}

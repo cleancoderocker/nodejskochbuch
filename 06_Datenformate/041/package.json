@@ -1,0 +1,18 @@
+{
+  "name": "recipe-06",
+  "version": "1.0.0",
+  "description": "Rezept: HTML mit der DOM-API generieren",
+  "main": "./src/start.js",
+  "scripts": {
+    "start": "node ./src/start.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "jsdom": "^12.2.0"
+  }
+}

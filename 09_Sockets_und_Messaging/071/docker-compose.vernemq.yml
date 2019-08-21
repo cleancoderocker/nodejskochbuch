@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  broker-vernemq:
+    image: erlio/docker-vernemq
+    container_name: vernemq
+    environment: 
+      # DOCKER_VERNEMQ_USER_ADMIN: "secret"
+      DOCKER_VERNEMQ_ALLOW_ANONYMOUS: "on"
+    ports:
+      - 1883:1883
+    expose:
+      - 1883

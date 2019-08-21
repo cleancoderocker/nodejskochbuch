@@ -1,0 +1,15 @@
+{
+  "name": "persistence-redis",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./src/strings.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "redis": "^2.8.0"
+  }
+}

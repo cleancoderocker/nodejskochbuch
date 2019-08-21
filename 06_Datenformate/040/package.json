@@ -1,0 +1,20 @@
+{
+  "name": "recipe-05",
+  "version": "1.0.0",
+  "description": "Rezept: HTML mit Template-Engines generieren",
+  "main": "./src/start.js",
+  "scripts": {
+    "start": "node ./src/start.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "faker": "^4.1.0",
+    "jsdom": "^12.2.0",
+    "pug": "^2.0.3"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "testing-coverage",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx jest --verbose",
+    "test:watch": "npx jest --watch",
+    "test:coverage": "npx jest --coverage"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}

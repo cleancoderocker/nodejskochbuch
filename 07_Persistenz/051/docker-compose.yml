@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+    mongodb:
+        image: mongo:latest
+        environment:
+          - MONGO_DATA_DIR=/data/db
+          - MONGO_LOG_DIR=/dev/null
+        volumes:
+          - ./data/db:/data/db
+        ports:
+            - 27017:27017

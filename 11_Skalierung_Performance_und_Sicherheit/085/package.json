@@ -1,0 +1,17 @@
+{
+  "name": "system",
+  "version": "1.0.0",
+  "scripts": {
+    "start:cpu": "node ./src/start-cpu.js",
+    "start:os": "node ./src/start-os.js",
+    "start:systeminformation": "node ./src/start-systeminformation.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "systeminformation": "^3.45.6"
+  }
+}

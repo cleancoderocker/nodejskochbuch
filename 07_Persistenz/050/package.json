@@ -1,0 +1,16 @@
+{
+  "name": "persistence-orm",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./src/connect.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "mysql2": "^1.5.2",
+    "sequelize": "^4.35.2"
+  }
+}

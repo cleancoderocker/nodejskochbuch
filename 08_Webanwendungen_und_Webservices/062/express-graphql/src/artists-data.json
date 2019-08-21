@@ -1,0 +1,133 @@
+{
+  "artists": [
+    {
+      "id": "artist-1",
+      "name": "Ben Harper",
+      "albums": [
+        {
+          "id": "album-1",
+          "title": "Welcome to the Cruel World",
+          "year": 1994,
+          "tracks": [
+            {
+              "id": "title-1",
+              "title": "The Three of Us",
+              "length": "2:35"
+            },
+            {
+              "id": "title-2",
+              "title": "Whipping Boy",
+              "length": "5:31"
+            },
+            {
+              "id": "title-3",
+              "title": "Breakin' Down",
+              "length": "4:00"
+            },
+            {
+              "id": "title-4",
+              "title": "Don't Take That Attitude to Your Grave",
+              "length": "4:25"
+            },
+            {
+              "id": "title-5",
+              "title": "Waiting on an Angel",
+              "length": "3:53"
+            },
+            {
+              "id": "title-6",
+              "title": "Mama's Got a Girlfriend Now",
+              "length": "2:29"
+            },
+            {
+              "id": "title-7",
+              "title": "Forever",
+              "length": "3:23"
+            },
+            {
+              "id": "title-8",
+              "title": "Like a King",
+              "length": "4:18"
+            },
+            {
+              "id": "title-9",
+              "title": "Pleasure and Pain",
+              "length": "3:44"
+            },
+            {
+              "id": "title-10",
+              "title": "Walk Away",
+              "length": "3:49"
+            },
+            {
+              "id": "title-11",
+              "title": "How Many Miles Must We March",
+              "length": "3:07"
+            },
+            {
+              "id": "title-12",
+              "title": "Welcome to the Cruel World",
+              "length": "5:36"
+            },
+            {
+              "id": "title-13",
+              "title": "I'll Rise",
+              "length": "3:35"
+            }
+          ]
+        },
+        {
+          "id": "album-2",
+          "title": "Fight for Your Mind",
+          "year": 1995
+        },
+        {
+          "id": "album-3",
+          "title": "The Will to Live",
+          "year": 1997
+        },
+        {
+          "id": "album-4",
+          "title": "Burn to Shine",
+          "year": 1999
+        },
+        {
+          "id": "album-5",
+          "title": "Diamonds on the Inside",
+          "year": 2003
+        }
+      ]
+    },
+    {
+      "id": "artist-2",
+      "name": "DJ Shadow",
+      "albums": [
+        {
+          "id": "album-21",
+          "title": "Endtroducing.....",
+          "year": 1996
+        },
+        {
+          "id": "album-22",
+          "title": "The Private Press",
+          "year": 2002
+        },
+        {
+          "id": "album-23",
+          "title": "The Outsider",
+          "year": 2006
+        },
+        {
+          "id": "album-24",
+          "title": "The Less You Know, the Better",
+          "year": 2011
+        },
+        {
+          "id": "album-25",
+          "title": "The Mountain Will Fall",
+          "year": 2016
+        }
+      ]
+    }
+  ]
+}

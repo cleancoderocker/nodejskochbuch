@@ -1,0 +1,18 @@
+{
+  "name": "process-javascript",
+  "version": "1.0.0",
+  "main": "./src/start.js",
+  "scripts": {
+    "start": "node ./src/start.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "escodegen": "^1.11.0",
+    "esprima": "^4.0.1",
+    "estraverse": "^4.2.0"
+  }
+}

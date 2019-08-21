@@ -1,0 +1,14 @@
+{
+  "name": "processes-stream",
+  "version": "1.0.0",
+  "main": "./src/start.js",
+  "scripts": {
+    "start:curl": "node ./src/start-spawn-curl.js",
+    "start:tail": "node ./src/start-spawn-tail.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann"
+}

@@ -1,0 +1,4 @@
+div.someClass > h2 {
+  margin: 25px;
+  background-color: rgb(240, 240, 240);
+}

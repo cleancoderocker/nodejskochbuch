@@ -1,0 +1,15 @@
+{
+  "name": "web-graphql-query",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./src/graphql-query.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "graphql": "^14.0.2"
+  }
+}

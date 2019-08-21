@@ -1,0 +1,20 @@
+{
+  "name": "recipe-04",
+  "version": "1.0.0",
+  "description": "Rezept: Dateien und Verzeichnisse überwachen",
+  "main": "./src/start.js",
+  "scripts": {
+    "start:readable": "node ./src/start-readable.js",
+    "start:writable": "node ./src/start-writable.js",
+    "start:duplex": "node ./src/start-duplex.js",
+    "start:transform": "node ./src/start-transform.js"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "chokidar": "^2.0.2"
+  }
+}

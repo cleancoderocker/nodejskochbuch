@@ -1,0 +1,16 @@
+{
+  "name": "configuration-optimal",
+  "version": "1.0.0",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "dependencies": {
+    "convict": "^4.4.0"
+  }
+}

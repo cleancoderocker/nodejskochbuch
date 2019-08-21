@@ -1,0 +1,43 @@
+{
+	"data": {
+	  "artists": [
+		{
+		  "name": "Ben Harper",
+		  "albums": [
+			{
+			  "title": "Welcome to the Cruel World",
+			  "tracks": [
+				{
+				  "title": "The Three of Us"
+				},
+				{
+				  "title": "Whipping Boy"
+				},
+				{
+				  "title": "Breakin' Down"
+				},
+				{
+				  "title": "Don't Take That Attitude to Your Grave"
+				},
+				{
+				  "title": "Waiting on an Angel"
+				},
+				{
+				  "title": "Mama's Got a Girlfriend Now"
+				},
+				...
+			  ]
+			},
+			...
+		  ]
+		},
+		{
+		  "name": "DJ Shadow",
+		  "albums": [
+			...
+		  ]
+		}
+	  ]
+	}
+  }
+  

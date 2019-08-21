@@ -1,0 +1,58 @@
+{
+	"data": {
+	  "artists": [
+		{
+		  "id": "artist-1",
+		  "name": "Ben Harper",
+		  "albums": [
+			{
+			  "id": "album-1",
+			  "title": "Welcome to the Cruel World",
+			  "tracks": [
+				{
+				  "id": "title-1",
+				  "title": "The Three of Us",
+				  "length": "2:35"
+				},
+				{
+				  "id": "title-2",
+				  "title": "Whipping Boy",
+				  "length": "5:31"
+				},
+				{
+				  "id": "title-3",
+				  "title": "Breakin' Down",
+				  "length": "4:00"
+				},
+				{
+				  "id": "title-4",
+				  "title": "Don't Take That Attitude to Your Grave",
+				  "length": "4:25"
+				},
+				{
+				  "id": "title-5",
+				  "title": "Waiting on an Angel",
+				  "length": "3:53"
+				},
+				{
+				  "id": "title-6",
+				  "title": "Mama's Got a Girlfriend Now",
+				  "length": "2:29"
+				},
+				...
+			  ]
+			},
+			...
+		  ]
+		},
+		{
+		  "id": "artist-2",
+		  "name": "DJ Shadow",
+		  "albums": [
+			...
+		  ]
+		}
+	  ]
+	}
+  }
+  

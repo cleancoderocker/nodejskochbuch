@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  broker:
+    image: eclipse-mosquitto
+    container_name: mosquitto
+    ports:
+      - 1883:1883
+    expose:
+      - 1883

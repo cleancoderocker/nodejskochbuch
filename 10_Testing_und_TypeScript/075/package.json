@@ -1,0 +1,16 @@
+{
+  "name": "testing-watch",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx jest --verbose",
+    "test:watch": "npx jest --watch"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Philip Ackermann",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
