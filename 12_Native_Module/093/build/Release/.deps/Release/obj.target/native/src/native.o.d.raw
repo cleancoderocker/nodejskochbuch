@@ -1,5 +1,0 @@
-Release/obj.target/native/src/native.o: ../src/native.cc \
-  /Users/philipackermann/.node-gyp/12.0.0/include/node/node_api.h \
-  /Users/philipackermann/.node-gyp/12.0.0/include/node/js_native_api.h \
-  /Users/philipackermann/.node-gyp/12.0.0/include/node/js_native_api_types.h \
-  /Users/philipackermann/.node-gyp/12.0.0/include/node/node_api_types.h
